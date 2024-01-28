@@ -1,0 +1,247 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Make header sticky in desktop mode */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+	background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Update the style for the header and navigation links */
+.logo {
+    display: block;
+    margin: 0 auto;
+	max-width: 50px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 767px) {
+    header {
+        position: relative;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-section {
+    background: url('hero-background.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero h1 {
+    font-size: 4em;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero button {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #333;
+}
+
+
+.event-details-section {
+    background-color: #f5f5f5;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.event-details-section h2 {
+    font-size: 2.5em;
+    font-family: 'Playfair Display', serif;
+}
+
+#map {
+	width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.countdown-section {
+    background: linear-gradient(to right, #e0d5cf, #e1b382);
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-section h2 {
+    font-size: 2.5em;
+    font-family: 'Playfair Display', serif;
+}
+
+#countdown-timer {
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.guestbook-section {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.guestbook-section h2 {
+    font-size: 2.5em;
+    font-family: 'Playfair Display', serif;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #1e1e1e;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+#thankYouMessage {
+    display: none;
+    color: #4CAF50;
+}
+
+#resetButton {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#resetButton:hover {
+    background-color: #333;
+}
+
+
+.contact-section {
+    background: linear-gradient(to right, #e0d5cf, #e1b382);
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.footer-section {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #e1b382;
+}
