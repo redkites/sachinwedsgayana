@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Countdown Timer
-    $('#countdown-timer').countdown('2024/03/02 18:00:00', function (event) {
+    $('#countdown-timer').countdown('2024/03/02 00:00:00', function (event) {
         $(this).html(event.strftime('%D days %H:%M:%S'));
     });
 });
@@ -68,7 +68,10 @@ document.addEventListener('DOMContentLoaded', function () {
         thankYouMessage.style.display = 'none';
     });
 });
-
+document.getElementById('form-container').addEventListener('submit', function () {
+		// Trigger confetti
+		confetti();
+		});
 var colors = ['#1e1e1e', '#ffeb3b', '#ff9800', '#e91e63', '#2196f3'];
 
 document.addEventListener('DOMContentLoaded', function () {

@@ -1,9 +1,15 @@
+:root {
+    --navy-blue: #001F3F;
+    --elegant-gold: #FFD700;
+    --subtle-gray: #CCCCCC;
+    --creamy-white: #F5F5F5;
+    --royal-burgundy: #800020;
+    --soft-blush: #E6B8A2;
+}
+
 body {
-    font-family: 'Georgia', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    color: var(--navy-blue);
 }
 
 /* Make header sticky in desktop mode */
@@ -12,7 +18,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-	background-color: #1e1e1e;
+	background-color: #ffffff;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -29,11 +35,16 @@ nav ul li {
     margin-right: 20px;
 }
 
+nav ul li a {
+    text-decoration: none;
+	color: darkgray;
+}
+
 /* Update the style for the header and navigation links */
 .logo {
     display: block;
     margin: 0 auto;
-	max-width: 50px;
+	max-width: 150px;
 }
 
 nav {
@@ -72,36 +83,70 @@ nav {
 }
 
 .hero-section {
-    background: url('hero-background.jpg') center/cover no-repeat;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
     color: #fff;
     text-align: center;
-    padding: 150px 20px;
+    padding: 100px 20px; /* Adjust padding based on your design */
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
 }
 
-.hero h1 {
-    font-size: 4em;
-    font-family: 'Playfair Display', serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.hero p {
-    font-size: 1.2em;
+.hero-section h1,
+.hero-section p,
+.cta-button {
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards;
 }
 
-.hero button {
-    background-color: #1e1e1e;
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #800020; /* Royal Burgundy */
     color: #fff;
-    padding: 10px 20px;
-    border: none;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-.hero button:hover {
-    background-color: #333;
+.cta-button:hover {
+    background-color: #E6B8A2; /* Soft Blush */
 }
-
 
 .event-details-section {
     background-color: #f5f5f5;
@@ -123,6 +168,18 @@ nav {
     overflow: hidden;
 }
 
+/* Container styling */
+.form-container {
+  max-width: 600px; /* Adjust the width based on your design */
+  margin: 0 auto; /* Center the form container */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .form-container {
+    max-width: 100%;
+  }
+}
 
 .countdown-section {
     background: linear-gradient(to right, #e0d5cf, #e1b382);

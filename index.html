@@ -16,10 +16,10 @@
         <!-- Navigation links -->
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home">Home</a></li>				
+                <li><a href="#countdown">Countdown</a></li>
                 <li><a href="#event-details">Event Details</a></li>
                 <li><a href="#venue">Venue</a></li>
-                <li><a href="#countdown">Countdown</a></li>
                 <li><a href="#guestbook">Guestbook</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -27,40 +27,42 @@
     </header>
 
     <section id="home" class="hero-section">
-        <div class="hero">
-            <h1>Luxury Wedding Celebration</h1>
-            <p>Join us for a magical day filled with love and joy</p>
-        </div>
+		<div class="hero-section">
+			<h1>Join Sachin & Gayana</h1>
+			<p>For a Magical Celebration of Love and Joy</p>
+			<p>Save the Date for an Enchanting Day</p>
+			<p>Filled with Laughter, Romance, and Everlasting Memories</p>
+			<a href="#rsvp" class="cta-button">RSVP Now</a>
+		</div>
     </section>
-
-    <section id="event-details" class="container event-details-section">
-        <div>
-            <h2>Event Details</h2>
-            <p>Date: January 1, 2025</p>
-            <p>Time: 5:00 PM</p>
-            <p>Venue: Elegant Venue, City</p>
-            <p>Dress Code: Formal</p>
-        </div>
-        <div>
-            <h2>Interactive Map</h2>
-            <!-- Integrate an interactive map here (Google Maps, Mapbox, etc.) -->
-            <div id="map"></div>
-        </div>
-    </section>
-
-    <section id="countdown" class="container countdown-section">
+	
+	<section id="countdown" class="container countdown-section">
         <div>
             <h2>Countdown to the Celebration</h2>
             <div id="countdown-timer">00:00:00:00</div>
         </div>
     </section>
 
+    <section id="event-details" class="container event-details-section">
+        <div>
+            <h2>Event Details</h2>
+            <p>Date: March 2, 2024</p>
+            <p>Time: 7:00 PM</p>
+            <p>Venue: Dr Bheem Roa Palace, Rajajinagar, Bengaluru</p>
+        </div>
+        <div>
+            <h2>Map Location</h2>
+            <!-- Integrate an interactive map here (Google Maps, Mapbox, etc.) -->
+            <div id="map"></div>
+        </div>
+    </section>    
+
 	<!-- Update the guestbook section in your HTML -->
 	<section id="guestbook" class="container guestbook-section">
-		<div>
+		<div class="form-container">
 			<h2>Guestbook</h2>
 			<p>Leave your wishes and messages for the happy couple:</p>
-			<form id="guestbookForm" action="#" method="POST">
+			<!-- <form id="guestbookForm" action="#" method="POST">
 				<label for="guestName">Name:</label>
 				<input type="text" id="guestName" name="guestName" required>
 
@@ -68,7 +70,9 @@
 				<textarea id="message" name="message" rows="4" required></textarea>
 
 				<button type="submit">Submit</button>
-			</form>
+			</form> -->
+			
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSex-I35pC8poq7cLH7HG0LJQRSU1_ig3E8KcK0OM0y9nOI31A/viewform?embedded=truee" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 			<!-- Thank you message -->
 			<div id="thankYouMessage" style="display: none;">
@@ -82,20 +86,25 @@
         <div>
             <h2>Contact Information</h2>
             <p>For inquiries and assistance, please contact us:</p>
-            <p>Email: info@luxurywedding.com</p>
-            <p>Phone: +123 456 7890</p>
+            <p>Email: naiksachin195@gmail.com</p>
+            <p>Phone: +91 911 300 7976</p>
         </div>
     </section>
 
     <footer class="footer-section">
         <div class="social-media">
             <!-- Implement social media icons with share functionality -->
-            <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
             <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
+	<script>
+	  document.getElementById('form-container').addEventListener('submit', function () {
+		// Trigger confetti
+		confetti();
+	  });
+	</script>
 
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.1/dist/canvas-confetti.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
     <script src="script.js"></script>
