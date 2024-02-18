@@ -12,17 +12,16 @@ body {
     color: var(--navy-blue);
 }
 
-/* Make header sticky in desktop mode */
 header {
-    position: fixed;
-    top: 0;
+    position: static;
     width: 100%;
     z-index: 1000;
-	background-color: #ffffff;
+    background-color: #ffffff;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
+
 
 nav ul {
     list-style-type: none;
@@ -51,40 +50,77 @@ nav {
     margin-top: 20px;
 }
 
-/* Responsive styles for mobile devices */
-@media (max-width: 767px) {
+@media only screen and (min-width: 1200px) {
+    /* Increase padding for header on larger screens */
     header {
-        position: relative;
+        padding: 30px;
     }
 
+    /* Increase max-width for the container */
+    .container {
+        max-width: 1000px;
+    }
+
+    /* Increase padding for sections on larger screens */
+    .countdown-section,
+    .event-details-section,
+    .guestbook-section,
+    .contact-section {
+        padding: 40px;
+    }
+
+    /* Increase font size for h2 on larger screens */
+    .countdown-section h2,
+    .event-details-section h2,
+    .guestbook-section h2,
+    .contact-section h2 {
+        font-size: 3em;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media only screen and (max-width: 768px) {
+    /* Adjust header padding for better mobile view */
+    header {
+        padding: 10px;
+    }
+
+    /* Make the logo smaller for mobile devices */
     .logo {
-        margin-bottom: 10px;
+        max-width: 100px;
     }
 
+    /* Center the navigation links for mobile devices */
     nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
 
-    nav ul {
-        margin-top: 10px;
+    /* Adjust countdown and event details section padding for mobile view */
+    .countdown-section,
+    .event-details-section {
+        padding: 20px;
     }
 
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
+    /* Make the countdown timer font smaller for mobile devices */
+    #countdown-timer {
+        font-size: 1.5em;
+    }
+
+    /* Adjust form container width for better display on small screens */
+    .form-container {
+        width: 90%;
     }
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .hero-section {
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('sachin-gayana-bg.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -174,15 +210,8 @@ nav {
   margin: 0 auto; /* Center the form container */
 }
 
-/* Responsive styling for smaller screens */
-@media (max-width: 768px) {
-  .form-container {
-    max-width: 100%;
-  }
-}
-
 .countdown-section {
-    background: linear-gradient(to right, #e0d5cf, #e1b382);
+    background: linear-gradient(to right, #f5e8e5, #f2d3b2);
     padding: 40px;
     margin-top: 20px;
     border-radius: 10px;

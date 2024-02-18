@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sachin weds Gayana</title>
     <link rel="stylesheet" href="styles.css">
-	<script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://form.jotform.com/jsform/240481151648051"></script>
 </head>
 <body>
 
@@ -14,7 +14,7 @@
         <!-- Logo centered in the header -->
         <img src="sachin-gayana.png" alt="sachin gayana logo" class="logo">
         <!-- Navigation links -->
-        <nav>
+        <!-- <nav>
             <ul>
                 <li><a href="#home">Home</a></li>				
                 <li><a href="#countdown">Countdown</a></li>
@@ -23,18 +23,17 @@
                 <li><a href="#guestbook">Guestbook</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
 
     <section id="home" class="hero-section">
-		<div class="hero-section">
-			<h1>Join Sachin & Gayana</h1>
-			<p>For a Magical Celebration of Love and Joy</p>
-			<p>Save the Date for an Enchanting Day</p>
-			<p>Filled with Laughter, Romance, and Everlasting Memories</p>
-			<a href="#rsvp" class="cta-button">RSVP Now</a>
-		</div>
-    </section>
+        <div class="hero-content">
+            <h1>Join Sachin & Gayana</h1>
+            <p>For a Magical Celebration of Love and Joy</p>
+            <p>Save the Date for an Enchanting Day</p>
+            <p>Filled with Laughter, Romance, and Everlasting Memories</p>
+        </div>
+    </section>    
 	
 	<section id="countdown" class="container countdown-section">
         <div>
@@ -46,60 +45,29 @@
     <section id="event-details" class="container event-details-section">
         <div>
             <h2>Event Details</h2>
-            <p>Date: March 2, 2024</p>
-            <p>Time: 7:00 PM</p>
+            <h4>Reception <i class="fa-solid fa-party-horn"></i></h4>
+            <p><i class="fa fa-calendar"></i> March 2, 2024, 07:00 PM Onwards</p>
+
+            <h4>Muhurtham</h4>
+
+            <p><i class="fa fa-calendar"></i> March 3, 2024, 09:20 AM to 10.30 AM</p>
             <p>Venue: Dr Bheem Roa Palace, Rajajinagar, Bengaluru</p>
         </div>
         <div>
             <h2>Map Location</h2>
-            <!-- Integrate an interactive map here (Google Maps, Mapbox, etc.) -->
-            <div id="map"></div>
-        </div>
-    </section>    
-
-	<!-- Update the guestbook section in your HTML -->
-	<section id="guestbook" class="container guestbook-section">
-		<div class="form-container">
-			<h2>Guestbook</h2>
-			<p>Leave your wishes and messages for the happy couple:</p>
-			<!-- <form id="guestbookForm" action="#" method="POST">
-				<label for="guestName">Name:</label>
-				<input type="text" id="guestName" name="guestName" required>
-
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" rows="4" required></textarea>
-
-				<button type="submit">Submit</button>
-			</form> -->
-			
-			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSex-I35pC8poq7cLH7HG0LJQRSU1_ig3E8KcK0OM0y9nOI31A/viewform?embedded=truee" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-			<!-- Thank you message -->
-			<div id="thankYouMessage" style="display: none;">
-				<p>Thank you for your wishes! Your message has been received.</p>
-				<button id="resetButton">Leave Another Message</button>
-			</div>
-		</div>
-	</section>
-
-    <section id="contact" class="container contact-section">
-        <div>
-            <h2>Contact Information</h2>
-            <p>For inquiries and assistance, please contact us:</p>
-            <p>Email: naiksachin195@gmail.com</p>
-            <p>Phone: +91 911 300 7976</p>
+            <!-- <div id="map"></div> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7198891287835!2d77.54833507367184!3d12.98975931448273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d8d7b7791a3%3A0x19d3c42d8cff2b91!2sDr.%20Bheem%20Rao%20Palace!5e0!3m2!1sen!2sin!4v1708238444589!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <hr>
+            <button onclick="window.location.href='https://maps.app.goo.gl/ZA6dSKWW9uJV92HN6'">Get Route <i class="fa fa-map-marker"></i></button>
         </div>
     </section>
-
     <footer class="footer-section">
         <div class="social-media">
-            <!-- Implement social media icons with share functionality -->
-            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fa fa-instagram"></i></a>
         </div>
     </footer>
 	<script>
 	  document.getElementById('form-container').addEventListener('submit', function () {
-		// Trigger confetti
 		confetti();
 	  });
 	</script>
