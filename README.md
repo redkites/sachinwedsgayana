@@ -1,2 +1,2 @@
 # sachinwedsgayana
-wedding event website
+this is my wedding event website
